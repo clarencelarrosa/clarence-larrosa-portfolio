@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website - Clarence</title> <!--add title of the website-->
+    <link rel="stylesheet" href="style.css"> <!--connect the html and css style file-->
+    <script src="https://kit.fontawesome.com/40eb835a97.js" crossorigin="anonymous"></script></head>
+<body>
+    <!--We will add Live Server extension to open this html file after modifying-->
+
+    <!--Add div-->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo no background.png" class="logo">
+            <ul id="sidemenu">
+                <!-- in this, we will add list of menu-->
+                <!-- href so that it will be clickable-->
+                <li><a href="#header"> Home </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#services"> Services </a></li>
+                <li><a href="#portfolio"> Portfolio </a></li>
+                <li><a href="#contact"> Contact </a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Engineer</p>
+            <h1>Hi, I'm <span>Clarence Gail </span><br>from Philippines</h1>
+        </div>
+    </div>
+</div>
+
+<!-------------------ABOUT------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/no background.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! My name is Clarence Gail A. Larrosa. I graduated last September 4, 2023, 
+                    with a Bachelor’s degree in Computer Engineering from the Technological Institute of the Philippines-QC, 
+                    where I had the opportunity to explore a wide range of courses, including programming, software and mobile application development, 
+                    and hardware design. I am from Taguig City, and 23 years old. <br>
+                    <br>
+                    Click the tabs below to see my Skills, Experience, Education, and Certifications.
+                    
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                    <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                </div>
+                <!--skills-->
+                <div class="tab-contents active-tab" id="skills">
+                    <p>In this tab, it enumerates all my skills that I can offer.</p>
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces, and Creating Wireframes.</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android Apps</li>
+                        <li><span>Documenting</span><br>Creating Documentation, and Presentations</li> 
+                        <li><span>Editing</span><br>Flyers, Video, Photo</li> 
+                    </ul>
+                </div>
+                <!--languages-->
+                <div class="tab-contents active-tab" id="languages">
+                    <p>In this tab, it enumerates all programming languages that I used.</p>
+                    <ul>
+                        <li><span>Web Development</span><br>Python, HTML/CSS</li>
+                        <li><span>App Development</span><br>Kotlin</li>
+                        <li><span>Others</span><br>C, Scratch, Angular Framework</li>
+                        <li><span>Database Management System</span><br>SQL, SQL Flask</li>
+                    </ul>
+                </div>
+                <!--languages-->
+                <div class="tab-contents active-tab" id="tools">
+                    <p>In this tab, it enumerates all tools that I used.</p>
+                    <ul>
+                        <li><span>Editing Tools</span><br>Adobe Photoshop, Filmora</li>
+                        <li><span>Web Development</span><br>Sublime Text, Visual Studio Code, Anaconda, Jupyter, Google Colab</li>
+                        <li><span>App Development</span><br>Android Studio</li>
+                        <li><span>Documenting and Data Analysis</span><br>Word, Excel, Google Docs, Google Sheets, Minitab</li> 
+                        <li><span>UI/UX Design & Wireframe</span><br>Adobe XD</li> 
+                    </ul>
+                </div>
+                <!--experience-->
+                <div class="tab-contents" id="experience">
+                    <p>In this tab, you can see my experiences, including job and projects.</p>
+                    <ul>
+                        <li><span>Oct 2022 - Nov 2022</span><br>Front-end Developer at SimpleVia Technologies</li>
+                        <li><span>Experience 1</span><br>Experience</li>
+                        <li><span>Experience 1</span><br>Experience</li>
+                    </ul>
+                </div>
+                <!--education-->
+                <div class="tab-contents" id="Education">
+                    <p>In this tab, you can see my schools/institutions that I attended from high school to college.</p>
+                    <ul>
+                        <li><span>Technological Institute of the Philippines - QC</span><br><span1>College - Bachelor of Science in Computer Engineering</span1><br>June 2018 - Sept 2023</li>
+                        <li><span>STI College Global City</span><br><span1>Senior High School - ABM Strand</span1><br>March 106 - Apr 2018</li>
+                        <li><span>St. Threse</span><br><span1>Computer Literacy Program</span1><br>2015</li>
+                    </ul>
+                </div>
+                <!--certification-->
+                <div class="tab-contents" id="Certifications">
+                    <ul>
+                        <li><span>JavaScript Essentials 1</span><br><span1>Cisco</span1><br>Oct 2023</li>
+                        <li><span>Operating Systems Basics</span><br><span1>Cisco</span1><br>Oct 2023</li>
+                        <li><span>Introduction to Cybersecurity</span><br><span1>Cisco Networking Academy</span1><br>Sep 2023</li>
+                        <li><span>CCNAv7: Enterprise Networking, Security, and Automation</span><br><span1>Cisco</span1><br>Feb 2022</li>
+                        <li><span>DevNet Associate</span><br><span1>Cisco</span1><br>Feb 2022</li>
+                        <li><span>CCNA: Switching, Routing, and Wireless Essentials</span><br><span1>Cisco</span1><br>May 2021</li>
+                        <li><span>Cybersecurity Essentials</span><br><span1>Cisco</span1><br>March 2021</li>                        
+                        <li><span>CCNA: Introduction to Networks</span><br><span1>Cisco</span1><br>Jan 2021</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------SERVICES------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        
+        <div class="services-list">
+            <!--First service-->
+            <div>
+                <i class="fa-solid fa-code"></i> 
+                <h2>Web Design and Development</h2>
+                <p> I offer services in wireframing, designing and developing web applications. 
+                </p>
+ <!--               <a href="#">Learn more...</a> -->
+            </div>
+
+            <!--Second Service-->
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Mobile Development</h2>
+                <p>I offer services in wireframing, designing and developing Android applications. 
+                </p>
+ <!--               <a href="#">Learn more...</a> -->
+            </div>
+
+            <!--Third Service-->
+            <div>
+                <i class="fa-solid fa-paperclip"></i>
+                <h2>Documentation</h2>
+                <p>I offer services in creating documentations for projects, laboratory activities, 
+                    design projects/thesis, and other papers. I also offer creating presentations (Canva/PPT).
+                    I also offers checking the document.
+                </p>
+            </div>
+
+            <!--Fourth Service-->
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Tutor</h2>
+                <p>I offer tutoring sessions for coding, math, and science for all ages.
+                </p>
+            </div>
+
+            <!--Fifth Service-->
+            <div>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>Editing</h2>
+                <p>I offer editing videos, images, etc.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------- PORTFOLIO ------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="works-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Monitoring System and Mobile app</h3>
+                    <p>This is our design project wherein it detects the utilization
+                        of the construction workers of their PPE and monitor using
+                        the detection system and mobile application.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.PNG">
+                <div class="layer">
+                    <h3>Mobile Application</h3>
+                    <p>This can be downloaded. It is my final project in one of our courses.
+                    </p>
+                    <a href="myWorks.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="myWorks.html" class="btn">See more</a>
+    </div>
+   <!-- <div id = "see-more">See more</div> -->
+</div>
+
+<!------------CONTACT--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> larrosa.clarencegail@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0912345678</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100091553793625"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/clarence-gail-larrosa/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/clarencelarrosa"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Clarence Gail Larrosa - Resume_v3.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Type your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Clarence. Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!--<script>
+    let loadMoreBtn = document.querySelector('#see-more');
+    let currentItem = 3;
+
+    loadMoreBtn.onClick = () => {
+        let works = [...document.querySelectorAll('.container .works-list .work')];
+        for (var i = currentItem; i < currentItem + 3; i++) {
+            works[1].style.display = 'inline-block';   
+        } 
+        currentItem += 3
+
+        if (currentItem >= works.length){
+            seeMoreBtn.style.display = 'none';
+        }
+    }
+</script>
+-->
+
+</body>
+</html>
